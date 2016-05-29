@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hera.tugaskelompok" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DataUser" />
+        <activity android:name=".LihatDataUser" />
+        <activity android:name=".DataBarang" />
+        <activity android:name=".TambahBarang" />
+        <activity android:name=".UpdateDataBarang" />
+        <activity android:name=".LihatDataBarang" />
+        <activity android:name=".DataSupplier" />
+        <activity android:name=".InputDataSupplier" />
+        <activity android:name=".LihatDataSupplier" />
+        <activity android:name=".UpdateDataSupplier" />
+        <activity android:name=".DataKaryawan" />
+        <activity android:name=".InputDataKaryawan" />
+        <activity android:name=".LihatDataKaryawan" />
+        <activity android:name=".UpdateDataKaryawan" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hera.tugaskelompok.InputDataKaryawan">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_idkry"
+        android:layout_below="@+id/textView47"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Id Karyawan"
+        android:maxLength="6"
+        android:numeric="integer" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText_nmkry"
+        android:layout_below="@+id/editText_idkry"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText_idkry"
+        android:hint="Nama Karyawan"
+        android:maxLength="30"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_almkry"
+        android:layout_below="@+id/editText_nmkry"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText_nmkry"
+        android:hint="Alamat Karyawan"
+        android:inputType="textPostalAddress|text"
+        android:maxLength="50" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_tlpkry"
+        android:layout_below="@+id/editText_almkry"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText_almkry"
+        android:hint="Telpon Karyawan"
+        android:inputType="phone"
+        android:maxLength="13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Input Data Karyawan"
+        android:id="@+id/textView47"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:id="@+id/button_simpan3"
+        android:layout_alignTop="@+id/button_kembali3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:id="@+id/button_kembali3"
+        android:layout_below="@+id/editText_tlpkry"
+        android:layout_alignEnd="@+id/editText_tlpkry" />
+
+
+</RelativeLayout>

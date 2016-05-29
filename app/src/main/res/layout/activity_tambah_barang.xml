@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hera.tugaskelompok.TambahBarang">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_idbrg"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Id Barang"
+        android:inputType="number"
+        android:numeric="integer"
+        android:maxLength="6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_nmbrg"
+        android:layout_below="@+id/editText_idbrg"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText_idbrg"
+        android:hint="Nama Barang"
+        android:inputType="text"
+        android:maxLength="30" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_jnsbrg"
+        android:layout_below="@+id/editText_nmbrg"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText_nmbrg"
+        android:hint="Jenis Barang"
+        android:inputType="text"
+        android:maxLength="30" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_jmlbrg"
+        android:layout_below="@+id/editText_jnsbrg"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText_jnsbrg"
+        android:hint="Jumlah Barang"
+        android:numeric="integer"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_hrgbrg"
+        android:layout_below="@+id/editText_jmlbrg"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editText_jmlbrg"
+        android:hint="Harga Barang"
+        android:maxLength="10"
+        android:numeric="integer"
+        android:inputType="number" />
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText_idspl"
+    android:layout_below="@+id/editText_hrgbrg"
+    android:layout_alignParentStart="true"
+    android:layout_alignEnd="@+id/editText_hrgbrg"
+    android:hint="Id Supplier"
+        android:inputType="number"
+        android:numeric="integer"
+        android:maxLength="6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tambah Data Barang"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:id="@+id/button_simpan11"
+        android:layout_below="@+id/editText_idspl"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:id="@+id/button_kembali11"
+        android:layout_below="@+id/editText_idspl"
+        android:layout_alignEnd="@+id/textView4" />
+</RelativeLayout>
